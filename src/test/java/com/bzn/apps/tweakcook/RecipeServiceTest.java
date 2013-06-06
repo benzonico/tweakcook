@@ -27,7 +27,7 @@ public class RecipeServiceTest {
 		HttpEntity entity = response.getEntity();
 		String res = getResponseAsString(httpget, entity);
 		
-		assertThat(res).isEqualToIgnoringCase("[{\"text\":null}]");
+		assertThat(res).isEqualToIgnoringCase("[{\"title\":\"Cookies\"},{\"title\":\"Balthazar\"}]");
 	}
 
 	private String getResponseAsString(HttpGet httpget, HttpEntity entity) throws IOException {

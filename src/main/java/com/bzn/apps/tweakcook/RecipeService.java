@@ -24,7 +24,7 @@ public class RecipeService {
 			public Object handle(Request request, Response response) {
 				response.type("application/json");
 				try {
-					return  om.writeValueAsString(Lists.newArrayList(new Recipe()));
+					return  om.writeValueAsString(Lists.newArrayList(new Recipe("Cookies"),new Recipe("Balthazar")));
 				} catch (JsonProcessingException e) {
 					e.printStackTrace();
 				}
