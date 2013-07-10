@@ -1,9 +1,42 @@
-<html>
-<head><title>TweakCook</title></head>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>TweakCook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe book to custom and hack your recipes">
+    <meta name="author" content="benzonico">
+
+	<link href="//netdna.bootstrapcdn.com/bootswatch/2.3.2/spruce/bootstrap.min.css" rel="stylesheet">
+	<!--//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css-->
+ <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+</head>
 <body>
-	<h1>tweakCook </h1>
-	<div id="recipes"></div>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">tweakCook</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>My Recipes</h1>
+      <div id="recipes"></div>
+    </div> 
+	
 	 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	 <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 	 <script src="js/tweakcook.js" type="text/javascript"></script>
 </body>
 </html>
